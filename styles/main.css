@@ -1,0 +1,82 @@
+body {
+	background: url();
+}
+
+.main-head {
+	font-size: 8em;
+	font-family: "Sanchez";
+	margin-top: 397px;
+	margin-left: 75px;
+	font-weight: 100;
+}
+
+.main-divider {
+	margin-left: 75px;
+	width: 55%;
+	height: 1px;
+	background: black;
+	color:black;
+	opacity: 0.2;
+}
+
+.sub-head {
+	font-family: "verdana";
+	margin-left: 90px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	line-height: 35px;
+	width: 85%;
+	color: black;
+	opacity: 0.8;
+}
+
+.logo-background {
+	height: 1100px;
+	width: 1100px;
+	position: fixed;
+	right: -20%;
+	top: -35%;
+	-ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    opacity: 0.1;
+}
+
+#skills {
+	margin-top: 50px; 
+	margin-left: 150px;
+}
+
+.section-heading {
+	font-size: 2em;
+    font-family: "Sanchez";
+    color: black;
+}
+
+.section-body {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.skill-item {
+	font-family: "Sanchez";
+}
+
+.skill-item-value {
+	font-size: 23px;
+	color: grey;
+}
+
+.skill-item-name {
+	font-size: 20px;
+    margin-left: 10px;
+}
+
+.additional-items {
+	font-family: "Sanchez";
+	margin-top: 10px;
+}
+
+.additional-items span {
+	font-weight: bold;
+}
