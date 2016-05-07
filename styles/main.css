@@ -2,12 +2,37 @@ body {
 	background: url();
 }
 
+.selectDisable {-webkit-user-select: none;  -khtml-user-select: none;   -moz-user-select: none; -o-user-select: none;    user-select: none; }
+
+a {
+	color: inherit;
+	cursor: pointer;
+}
+a:hover, a:active {
+	text-decoration: none;
+	font-style: none;
+}
+a:active {
+	color : #337ab7;
+}
+
 .main-head {
 	font-size: 8em;
 	font-family: "Sanchez";
 	margin-top: 397px;
 	margin-left: 75px;
 	font-weight: 100;
+}
+
+.main-head img {
+	height:75px;
+	width:75px;
+	border-radius:100%;
+	margin-bottom: 26px;
+	margin-right: 10px;
+	opacity: 0.8;
+	-webkit-filter: grayscale(80%);
+    filter: grayscale(80%);
 }
 
 .main-divider {
@@ -20,11 +45,11 @@ body {
 }
 
 .sub-head {
-	font-family: "verdana";
+	font-family: "Sanchez";
 	margin-left: 90px;
 	margin-top: 30px;
-	margin-bottom: 80px;
-	line-height: 35px;
+	margin-bottom: 95px;
+	line-height: 30px;
 	width: 85%;
 	color: black;
 	opacity: 0.8;
@@ -42,8 +67,8 @@ body {
     opacity: 0.1;
 }
 
-#skills {
-	margin-top: 50px; 
+#section-feature {
+	margin-top: 50px;
 	margin-left: 150px;
 }
 
@@ -68,8 +93,8 @@ body {
 }
 
 .skill-item-name {
-	font-size: 20px;
-    margin-left: 10px;
+	font-size: 17px;
+  margin-left: 10px;
 }
 
 .additional-items {
@@ -79,4 +104,20 @@ body {
 
 .additional-items span {
 	font-weight: bold;
+}
+
+#section-footer {
+	margin-top: 50px;
+	background-color: black;
+	height: 60px;
+}
+
+#section-footer div {
+	position: relative;
+	top: 50%;
+	margin-right: 16px;
+	text-align: right;
+	color: grey;
+	font-family: "Sanchez";
+	transform: translateY(-50%);
 }
