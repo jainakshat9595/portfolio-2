@@ -1,5 +1,7 @@
 body {
 	background: url();
+	overflow-x: hidden;
+	width: 100s%;
 }
 
 .selectDisable {-webkit-user-select: none;  -khtml-user-select: none;   -moz-user-select: none; -o-user-select: none;    user-select: none; }
@@ -53,6 +55,11 @@ a:active {
 	width: 85%;
 	color: black;
 	opacity: 0.8;
+}
+
+.sub-head span {
+	font-weight: bold;
+	margin-left: 5px;
 }
 
 .logo-background {

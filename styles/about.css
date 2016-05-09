@@ -1,0 +1,110 @@
+body {
+	background: url();
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.selectDisable {-webkit-user-select: none;  -khtml-user-select: none;   -moz-user-select: none; -o-user-select: none;    user-select: none; }
+
+a {
+	color: inherit;
+	cursor: pointer;
+}
+a:hover, a:active {
+	text-decoration: none;
+	font-style: none;
+}
+a:active {
+	color : #337ab7;
+}
+
+.main-head {
+	font-size: 5em;
+	font-family: "Sanchez";
+	margin-left: 75px;
+	font-weight: 100;
+}
+
+.main-head img {
+	height:60px;
+	width:60px;
+	border-radius:100%;
+	margin-bottom: 16px;
+	margin-right: 10px;
+	opacity: 0.8;
+	-webkit-filter: grayscale(80%);
+    filter: grayscale(80%);
+}
+
+.main-head span {
+	font-size: 0.5em;
+	color: grey;
+}
+
+.main-head a:hover {
+	color: inherit;
+}
+
+.main-divider {
+	margin-left: 75px;
+	width: 55%;
+	height: 1px;
+	background: black;
+	color:black;
+	opacity: 0.2;
+}
+
+.logo-background {
+	height: 1100px;
+	width: 1100px;
+	position: fixed;
+	right: -20%;
+	top: -35%;
+	-ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    opacity: 0.1;
+}
+
+.sub-text {
+	font-family: "Sanchez";
+	margin-left: 90px;
+	margin-top: 50px;
+	line-height: 45px;
+	width: 75%;
+	color: black;
+	opacity: 0.8;
+	font-size: 1.3em;
+}
+
+.about-links {
+	    margin-left: 70px;
+    font-family: "Sanchez";
+    font-size: 1.3em;
+    font-weight: bolder;
+        margin-top: 48px;
+}
+
+.about-links .link {
+	    padding: 10px;
+    margin: 20px;
+    border: 1px solid grey;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+#section-footer {
+	margin-top: 50px;
+	background-color: black;
+	height: 60px;
+}
+
+#section-footer div {
+	position: relative;
+	top: 50%;
+	margin-right: 16px;
+	text-align: right;
+	color: grey;
+	font-family: "Sanchez";
+	transform: translateY(-50%);
+}
