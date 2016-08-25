@@ -37,6 +37,20 @@ a:active {
     filter: grayscale(80%);
 }
 
+.top-side-nav {
+	margin-right: 75px;
+	margin-top: -337px;
+	float: right;
+}
+
+.top-side-nav span {
+	font-weight: normal;
+	color: black;
+	font-size: 14px;
+	margin-left: 20px;
+	font-family: "Sanchez";
+}
+
 .main-divider {
 	margin-left: 75px;
 	width: 55%;
@@ -55,6 +69,7 @@ a:active {
 	width: 85%;
 	color: black;
 	opacity: 0.8;
+	font-size: 1.2em;
 }
 
 .sub-head span {
@@ -63,15 +78,16 @@ a:active {
 }
 
 .logo-background {
-	height: 1100px;
-	width: 1100px;
+	height: 85em;
+	width: 85em;
 	position: fixed;
-	right: -20%;
-	top: -35%;
+	right: -13.5em;
+	top: -21em;
 	-ms-transform: rotate(-20deg);
     -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);
     opacity: 0.1;
+    z-index: -1;
 }
 
 #section-feature {
