@@ -98,7 +98,7 @@ a:active {
 }
 
 .project-image {
-	height: 40vw;
+	/*height: 40vw;*/
 	background: rgba(183, 183, 183, 0.45);
 	margin-top: 30px;
 	padding-top: 15px;
@@ -106,16 +106,16 @@ a:active {
 }
 
 .project-image img {
-	height: 30%;
+	/*height: 30%;
 	max-width: 100%;
-	max-height: 100%;
+	max-height: 100%;*/
 	opacity: 1;
 	background-color: grey;
 	position: relative;
-	width: 70%;
-	top: 50%;
+	width: 100%;
+	/*top: 50%;
 	left: 50%;
-	transform: translate(-50%, 50%);
+	transform: translate(-50%, 50%);*/
 }	
 
 .portfolio-links {
