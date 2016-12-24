@@ -87,8 +87,10 @@ a:active {
 }
 
 .portfolio-item-image {
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 	padding-bottom: 15px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .portfolio-item-image img {
@@ -97,8 +99,8 @@ a:active {
 	background-color: grey;
 }
 
-.portfolio-item-outer div {
-	height: 200px;
+.portfolio-item-outer .row {
+	height: 175px;
 }
 
 .portfolio-item-dec {
