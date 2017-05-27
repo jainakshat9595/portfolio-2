@@ -1,0 +1,384 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Galler-E || Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="lightSlider/css/lightSlider.css" />
+    <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    
+  </head>
+  <body>
+    
+      <!-- Navigation Bar -->
+      <header class="navbar navbar-default top-nav">
+        <div class="container-fluid">
+          <div class="row user_bar">
+            <div class="container-fluid">
+              <div class="row">
+                <ul class="clearfix pull-right user_bar_list">
+                  <li><a href="sell.html">Sell Your Artwork</a></li>
+                  <li class="register-btn"><a>Register</a></li>
+                  <li class="login-btn"><a>Login</a></li>
+                  <li class="logout-btn"><a><img class="img-rounded" src="images/user-ex.jpg" alt="User_Logged_In"> Logged In as Ugly Bird <i class="fa fa-caret-down"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-10 col-sm-11 nav_bar">
+              <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand brand-icon"><img class="img-responsive brand-icon-logo" src="images/logo.png" alt="Logo of Galler-E"></img></a>
+              </div>
+              <nav class="collapse navbar-collapse bs-navbar-collapse pull-right">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">How-to</a></li>
+                  <li><a href="#">Tools</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-xs-2 col-sm-1 main_search_btn">
+              <center>
+                <i class="fa fa-search animated fa-2x"></i>
+              </center>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <div class="container-fluid sell-page-container">
+        <div class="row sell-page-head">
+          <h1 class="pull-right">Set Up your Profile</h1>
+        </div>
+        <center>
+        <div class="row sell-page-form">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="container-fluid reg-page-form-container">
+                  <div class="row" style="padding-top:20px;">
+                    <form class="form" id="registration_complete_form">
+                      <div class="col-sm-12">
+                        Complete your profile to get started, <span class="userMail"></span>
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" placeholder="First Name" id="seller_fname"  class="form-control">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" placeholder="Last Name" id="seller_lname"  class="form-control">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" placeholder="Mobile Number" id="seller_phone"  class="form-control">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" placeholder="Profession" id="seller_profession"  class="form-control">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" placeholder="Area" id="seller_area"  class="form-control">
+                      </div>
+                      <p style="display:none;" class="userInfo"></p>
+                      <div class="col-sm-6">
+                        <input type="submit" id="seller_submit" value="Sign Up" class="btn btn-primary btn-block signup-btn">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12 sell-page-image">
+                      <div class="container-fluid sell-page-image-hover">
+                        <div class="fileUpload">
+                          <span class="fileUploadspan">Upload Image</span>
+                          <input type="file" class="upload" onchange="previewFile()" />
+                        </div>
+                      </div>
+                      <img class="img-thumbnail fileIploadimg" id="fileIploadimg_complete_profile" src="images/sell-page-def.jpg" alt="photo-to_be_uploaded">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-xs-12">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        </center>
+      </div>
+
+      <!--  Overlay Blocks  -->
+      <div class="hide" id="login-block">
+        <div class="login-block-overlay">
+        </div>
+        <div class="login-block-content">
+          <div class="row login-block-content-head pull-right">
+            <h3>Log In</h3>
+          </div>
+          <div class="row">
+            <input type="text" class="form-control input-g" placeholder="E-mail">
+          </div>
+          <div class="row">
+            <input type="password" class="form-control input-g" placeholder="Password">
+          </div>
+          <div class="row pull-right">
+            <button class="btn btn-default input-btn-g">LogIn</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hide" id="logout-block">
+        <div class="logout-block-overlay">
+        </div>
+        <div class="logout-block-content">
+          <div class="row logout-block-content-head pull-right">
+            <h3>Ugly Bird</h3>
+          </div>
+          <div class="row" style="clear:both;">
+            <ul>
+              <li>Dashboard</li>
+              <li>Log Out</li>
+              <li>Setting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="hide" id="register-block">
+        <div class="register-block-overlay">
+        </div>
+        <div class="register-block-content">
+          <div class="row register-block-content-head pull-right">
+            <h3>Register Yourself</h3>
+          </div>
+          <div class="row">
+            <input type="text" class="form-control input-g" id="register_name" placeholder="Name">
+          </div>
+          <div class="row">
+            <input type="email" class="form-control input-g" id="register_email" placeholder="E-mail">
+          </div>
+          <div class="row pull-right">
+            <button class="btn btn-default input-btn-g"  id="register_submit" onclick="register_submit_fun()">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hide" id="search-block">
+        <div class="search-block-overlay">
+        </div>
+        <div class="search-block-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <center>
+                  <form class="form-inline">
+                    <input type="text" class="form-control input-g" id="search-field" placeholder="Search for Painting, Sculptures and more..">
+                    <button type="submit" class="btn btn-default input-btn-g">Search</button>
+                  </form>
+                </center>
+              </div>
+              <div class="col-md-3">
+                <h3> Quich Search </h3>
+                <hr />
+                <ul>
+                  <li> Top Paintings </li>
+                  <li> New Additions </li>
+                  <li> Most Loved </li>
+                  <li> Low by Price </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h3> Categories </h3>
+                <hr />
+                <ul>
+                  <li> Oil Based </li>
+                  <li> Water Based </li>
+                  <li> XYZ </li>
+                  <li> Sexy Pichaas </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+      <!-- Footer Bar -->
+      <footer>
+        <div class="container-fluid">
+          <div class="row footer-bar">
+            <div class="col-sm-2 col-xs-6">
+              <ul>
+                <li> Home </li>
+                <li> About Us </li>
+                <li> Products </li>
+                <li> Sitemap </li>
+              </ul>
+            </div>
+            <div class="col-sm-offset-7 col-sm-3 col-xs-6 footer-contact">
+              <center>
+                <h5> contact@gallere.com </h5>
+                <hr />
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </center>
+            </div>
+          </div>
+          <div class="row copyright-bar">
+            <center>Copyrights &copy; 2015 Galler-E, All rights reserved.
+            Powered by Our Company Name</center>
+          </div>
+        </div>
+      </footer>
+    
+      <script src="scripts/jquery-1.11.2.js"></script>
+      <script src="lightSlider/js/jquery.lightSlider.js"></script>
+      <script src="scripts/bootstrap.min.js"></script>
+      <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+      <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+      <script src="scripts/val.js"></script>
+      <script src="scripts/fb.js"></script>
+      
+      <!-- Google Analytics Code -->
+      <script>
+         /*(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-XXXXX-X');
+         ga('send', 'pageview');*/
+      </script>
+
+      <!-- Java Script -->
+      <script type="text/javascript">
+
+        var qs = (function(a) {
+            if (a == "") return {};
+            var b = {};
+            for (var i = 0; i < a.length; ++i)
+            {
+                var p=a[i].split('=', 2);
+                if (p.length == 1)
+                    b[p[0]] = "";
+                else
+                    b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+            }
+            return b;
+        })(window.location.search.substr(1).split('&'));
+
+        console.log("mail= "+qs["mail"]);
+        console.log("hash= "+qs["hash"]);
+        console.log("sl= "+qs["sl"]);
+
+        $('.userMail').html(qs["mail"]);
+        $('.userInfo').html(qs["sl"]+"#"+qs["hash"]);
+
+        function previewFile(){
+          var preview = document.querySelector('.fileIploadimg');
+          var file    = document.querySelector('input[type=file]').files[0];
+          var reader  = new FileReader();
+          var img_src;
+
+          reader.onloadend = function () {
+              preview.src = reader.result;
+          }
+
+          if (file) {
+              reader.readAsDataURL(file);
+          } else {
+              preview.src = "";
+          }
+          img_src = preview.src;
+        }
+        
+        $(document).ready(function() {
+            $('.login-btn').on('click',function() {
+                if($('#login-block').hasClass('hide')) {
+                  $('#login-block').removeClass('hide');
+                  $('#login-block').addClass('show');
+                }
+                else {
+                  $('#login-block').removeClass('show');
+                  $('#login-block').addClass('hide');
+                }
+            });
+            $('.login-block-overlay').on('click',function() {
+                $('#login-block').removeClass('show');
+                $('#login-block').addClass('hide');
+            });
+
+            $('.register-btn').on('click',function() {
+                if($('#register-block').hasClass('hide')) {
+                  $('#register-block').removeClass('hide');
+                  $('#register-block').addClass('show');
+                }
+                else {
+                  $('#register-block').removeClass('show');
+                  $('#register-block').addClass('hide');
+                }
+            });
+            $('.register-block-overlay').on('click',function() {
+                $('#register-block').removeClass('show');
+                $('#register-block').addClass('hide');
+            });
+
+            $('.logout-btn').on('click',function() {
+                if($('#logout-block').hasClass('hide')) {
+                  $('#logout-block').removeClass('hide');
+                  $('#logout-block').addClass('show');
+                }
+                else {
+                  $('#logout-block').removeClass('show');
+                  $('#logout-block').addClass('hide');
+                }
+            });
+            $('.logout-block-overlay').on('click',function() {
+                $('#logout-block').removeClass('show');
+                $('#logout-block').addClass('hide');
+            });
+
+            $('.main_search_btn').on('click',function() {
+                if($('#search-block').hasClass('hide')) {
+                  $('#search-block').removeClass('hide');
+                  $('#search-block').addClass('show');
+                }
+                else {
+                  $('#search-block').removeClass('show');
+                  $('#search-block').addClass('hide');
+                }
+            });
+            $('.search-block-overlay').on('click',function() {
+                $('#search-block').removeClass('show');
+                $('#search-block').addClass('hide');
+            });
+        });
+      </script>
+
+</body>
+</html>

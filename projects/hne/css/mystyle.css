@@ -1,0 +1,354 @@
+
+/*asasas*/
+.sec-main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sec {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+a.btn {
+  font-family: 'Exo', sans-serif;
+  letter-spacing: 2px;
+}
+
+.header {
+	height: 70%;
+	background-color: darkcyan;
+	padding: 15% 5% 10% 5%;
+	font-family: 'Exo', sans-serif;
+  background-image: url(../img/11.png);
+  color: antiquewhite;
+}
+
+.header h1 {
+  font-size: 2.57em;
+}
+
+.header h2 {
+	font-size: 5.5em;
+  margin-bottom: 0px;
+}
+
+.header h3 {
+  margin-top: 0px;
+  font-size: 2em;
+}
+
+.header p {
+  font-size: 1.6em;
+}
+
+.header span {
+  font-size: 1.6em;
+}
+
+.footer {
+	height: 30%;
+	text-align: center;
+  border-top: 7px solid white;
+  background: repeating-linear-gradient(
+  45deg,
+  rgba(0, 0, 0, 0.2),
+  rgba(0, 0, 0, 0.2) 10px,
+  rgba(0, 0, 0, 0.3) 10px,
+  rgba(0, 0, 0, 0.3) 20px
+),
+url(../img/8.png);
+
+}
+
+.btn {
+  border-left: 5px solid #c16834;
+}
+
+.btn-cstm {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.btn-cstm-ques1 {
+  position: relative;
+  top: 25%;
+  transform: translateY(-25%);
+  width: 100%;
+}
+
+.btn-cstm-ques2 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%
+
+}
+
+.banner {
+    height: 100%;
+    background-color: #dcd2a6;
+    padding: 5%;
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+}
+
+.banner p {
+    font-size: 12em;
+    font-weight: 900;
+}
+
+.banner span {
+    font-size: 3.2em
+}
+
+.banner img {
+  width: 11em;
+  margin-top: 3.5em;
+  display: initial;
+}
+
+.main-title-head {
+  text-shadow: 1px 1px 5px #b0b0b0;
+  color: #655200;
+  
+}
+
+.write-font {
+  font-family: 'Asap', sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 2px !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.partit-1 {
+    padding: 5%;
+    font-size: 1.2em;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.partit-2 {
+    padding: 5%;
+    font-size: 1.2em;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: #a78a6e;
+}
+
+.start-letter {
+    font-size: 2.2em;
+    margin-right: 1px;
+
+}
+
+.bb-side-left {
+  background-color: burlywood;
+}
+
+.bb-custom-side {
+  padding: 3%;
+}
+
+.parrallax-1 {
+  background-image: url(../img/i4.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parrallax-2 {
+  background-image: url(../img/i5.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parrallax-3 {
+  background-image: url(../img/i6.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parrallax-4 {
+  background-image: url(../img/i7.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parrallax-5 {
+  background-image: url(../img/i8.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parrallax-6 {
+  background-image: url(../img/i9.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parrallax-7 {
+  background-image: url(../img/i10.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parrallax-8 {
+  background-image: url(../img/i11.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parrallax-9 {
+  background-image: url(../img/i12.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.video-container {
+  position:relative;
+  width: 100%;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+
+.quote-d {
+  padding: 5%;
+}
+
+.quote-d div:nth-child(n+1) {
+  margin-top: 2%;
+}
+
+.quote-d-inner {
+  border-left: 5px solid pink;
+  padding-left: 3%;
+}
+
+.quote-d-inner p {
+  font-size: 1.2em;
+}
+
+.quote-a {
+  padding: 5%;
+}
+
+.quote-a div:nth-child(n+1) {
+  margin-top: 2%;
+}
+
+.quote-a-inner {
+  text-align: right;
+  border-right: 5px solid #57c3d8;
+  padding-right: 3%;
+}
+
+.quote-a-inner p {
+  font-size: 1.2em;
+}
+
+
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}

@@ -1,0 +1,87 @@
+.section-one video {
+    width: 100%;
+    background:transparent no-repeat url('../img/home-hero.jpg');
+    background-size:100%"
+}
+
+.section-one-video-control {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    color: white;
+    transform: translate(-50%);
+    left: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 4.5em;
+}
+
+.section-one-video-control i {
+    font-size: 1.8em;
+}
+
+.flow-img {
+    display:block;
+    margin:auto;
+    width: 75%;
+}
+
+.sec-img-col {
+    text-align: center;
+}
+
+.client-item {
+    float: left;
+    text-align: center;
+}
+
+.contact-info {
+    color: white;
+    font-size: 1.5em;
+}
+
+.contact-info p {
+    font-size: 2.5em;
+}
+
+.section-two .header-content .header-content-inner.back {
+    background-color: rgba(0, 0, 0, 0.54);
+    padding: 2.5%;
+}
+
+.feature-item p {
+    font-size: 14px;
+}
+
+.navbar-right li a {
+    color: black !important;
+}
+
+.sec-img-client-wrapper {
+    min-height: 170px;
+    line-height:170px;
+    padding: 0px 11%;
+}
+
+.sec-img-client-wrapper img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.slider-left {
+    position: absolute;
+    z-index: 2;
+    margin-top: 25%;
+    left: 2%;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+.slider-right {
+    position: absolute;
+    z-index: 2;
+    margin-top: -25%;
+    right: 2%;
+    font-size: 5em;
+    cursor: pointer;
+}

@@ -1,0 +1,5 @@
+Add icons to logout side pop.
+Add icons to the image side sector
+Footer Bar Mid section
+Search bar - add new fields, beautify
+chage complete_profile_url link in val.js line 30
