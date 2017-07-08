@@ -28,7 +28,8 @@
 			<div class="col-lg-4 col-sm-6">
 				<div class="skill-item"><span class="skill-item-value">80%</span><span class="skill-item-name">C/C++</span></div>
 				<div class="skill-item"><span class="skill-item-value">85%</span><span class="skill-item-name">Java</span></div>
-				<div class="skill-item"><span class="skill-item-value">60%</span><span class="skill-item-name">Node.JS</span></div>
+				<div class="skill-item"><span class="skill-item-value">85%</span><span class="skill-item-name">Node.JS</span></div>
+				<div class="skill-item"><span class="skill-item-value">80%</span><span class="skill-item-name">WordPress</span></div>
 			</div>
 			<div class="col-lg-4 col-sm-6">
 				<div class="skill-item"><span class="skill-item-value">90%</span><span class="skill-item-name">HTML5/CSS</span></div>
@@ -37,10 +38,10 @@
 			</div>
 			<div class="col-lg-4 col-sm-6">
 				<div class="skill-item"><span class="skill-item-value">70%</span><span class="skill-item-name">Android Development</span></div>
-				<div class="skill-item"><span class="skill-item-value">80%</span><span class="skill-item-name">Firebase SDK</span></div>
+				<div class="skill-item"><span class="skill-item-value">90%</span><span class="skill-item-name">PHP</span></div>
 				<div class="skill-item"><span class="skill-item-value">50%</span><span class="skill-item-name">Photoshop</span></div>
 			</div>
-			<div class="col-sm-12 additional-items"> along with <span>Bootstrap 3</span>, <span>JQuery</span>, <span>PHP CodeIgniter</span>, <span>AJAX</span>, <span>MySQL DB</span> and <span>Awesomness..</span></div>
+			<div class="col-sm-12 additional-items"> along with <span>Bootstrap 3</span>, <span>JQuery</span>, <span>Firebase</span>, <span>AJAX</span>, <span>MySQL DB</span>, <span>Git</span>, <span>JIRA</span>, and <span>Awesomness..</span></div>
 		</div>
 	</section>
 
